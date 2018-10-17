@@ -51,8 +51,8 @@ end
 #Returns nil if not signed in
 def current_user
 	if(session[:user_id])
-		u = User.first(id: session[:user_id])
-		return u
+		@u ||= User.first(id: session[:user_id])
+		return @u
 	else
 		return nil
 	end
