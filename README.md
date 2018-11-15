@@ -8,7 +8,13 @@
    bundle install --without production
    ```
    ​
+## Running the Application
+1. Install the rerun gem: `gem install rerun`
 
+2. ```
+   rerun 'bundle exec ruby app.rb'
+   ```
+   ​
 
 ## What is in the box
 
