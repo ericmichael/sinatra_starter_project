@@ -3,6 +3,8 @@ require_relative "user.rb"
 
 enable :sessions
 
+set :session_secret, 'super secret'
+
 get "/login" do
 	erb :"authentication/login"
 end
